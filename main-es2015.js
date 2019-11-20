@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<h1><p>data ด้านล่าง</p></h1>\n<p>{{dataplace}}</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<h1><p>Last</p></h1>\n<h1><p>data ด้านล่าง</p></h1>\n<p>{{dataplace}}</p>\n");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"topnav\">\n    <a class=\"/\" href=\"#home\">Home</a>\n    <a href=\"/card\">ข้อมูล</a>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"topnav\">\n    <a class=\"/\" href=\"#home\">Home</a>\n    <a class=\"/\" href=\"/card\">ข้อมูล</a>\n</div>");
 
 /***/ }),
 
@@ -537,12 +537,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _user_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../user.service */ "./src/app/user.service.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
 
 
 
 let HomeComponent = class HomeComponent {
-    constructor(userService) {
+    constructor(userService, http) {
         this.userService = userService;
+        this.http = http;
     }
     ngOnInit() {
         this.userService.getPlace().subscribe((data) => {
@@ -552,7 +555,8 @@ let HomeComponent = class HomeComponent {
     }
 };
 HomeComponent.ctorParameters = () => [
-    { type: _user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"] }
+    { type: _user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
 ];
 HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
