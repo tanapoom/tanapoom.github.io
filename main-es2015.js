@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<img src=\"assets/arm.jpg\" alt=\"Avatar\" style=\"width:50%\">\n    <div>\n      <h1> ประวัติ </h1>\n    </div>\n    <div class=\"card\" >\n      <div class=\"container\">\n        <h4><b>{{data}}</b></h4>\n      </div>\n    </div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<h1>new</h1>\n    <div>\n      <h1> ประวัติ </h1>\n    </div>\n    <div class=\"card\" >\n      <div class=\"container\">\n        <h4><b>{{data}}</b></h4>\n      </div>\n    </div>\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<br><h1><p>data ด้านล่าง</p></h1></br>\n<p>{{dataplace}}</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<h1><p>data ด้านล่าง</p></h1>\n<p>{{dataplace}}</p>\n");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"topnav\">\n    <a class=\"/\" href=\"#home\">Home</a>\n    <a class=\"/\" href=\"/card\">ข้อมูล</a>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"topnav\">\n    <a class=\"/\" href=\"#home\">Home</a>\n    <a href=\"/card\">ข้อมูล</a>\n</div>");
 
 /***/ }),
 
